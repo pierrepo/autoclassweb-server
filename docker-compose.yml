@@ -15,11 +15,12 @@ services:
 
     flaskapp:
         restart: always
-        build: .
+        image: pierrepo/autoclassweb:latest
         volumes:
             - flaskapp-static:/app/flaskapp/static
             - ./results:/app/results
-        env_file: .env
+            - ./logs:/app/logs
+            - ./config:/app/config
         environment:
             FLASK_DEBUG: 1
         command: "gunicorn --config gunicorn.conf flaskapp:app"
