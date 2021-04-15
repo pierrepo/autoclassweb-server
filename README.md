@@ -1,6 +1,6 @@
 # Server deployment for AutoClassWeb
 
-This document explains how to deploy AutoClassWeb as a web server.
+This document explains how to deploy AutoClassWeb on a web server.
 
 
 ## Install Docker
@@ -14,7 +14,7 @@ Install Docker-compose with the following [instructions](https://docs.docker.com
 
 
 ## Clone this repo
-```
+```bash
 $ git clone https://github.com/pierrepo/autoclassweb-server.git
 ```
 
@@ -24,16 +24,10 @@ $ git clone https://github.com/pierrepo/autoclassweb-server.git
 
 Update app configuration file in `config/autoclassweb.cfg`.
 
-If you want to receive results by e-mail, pay attention to parameters:
-
-- `FLASK_RESULTS_BY_EMAIL`
-- `FLASK_SERVER_URL`
-- and all `MAIL_`
-
 
 ### Web server 
 
-Update port in configuration file `docker-compose.yml`. Replace `8000` in `8000:80` with the port number where you want your server to be accessible from the Internet.
+Update port in the configuration file `docker-compose.yml`. Replace `8000` in `8000:80` with the port number from which you want the AutoClassWeb service to be accessible.
 
 
 ## Run web serveur
