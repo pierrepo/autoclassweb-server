@@ -23,7 +23,7 @@ services:
             - ./config:/app/config
         environment:
             FLASK_DEBUG: 1
-        command: "gunicorn --config gunicorn.conf flaskapp:app"
+        command: "gunicorn --config /app/gunicorn.py flaskapp:app"
 
 volumes:
     flaskapp-static:
