@@ -41,7 +41,7 @@ $ docker-compose up -d
 
 First stop containers:
 ```
-$ docker-compose down
+$ docker-compose down -v
 ```
 
 Then, update images:
