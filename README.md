@@ -14,8 +14,9 @@ Install Docker-compose with the following [instructions](https://docs.docker.com
 
 
 ## Clone this repo
+
 ```bash
-$ git clone https://github.com/pierrepo/autoclassweb-server.git
+git clone https://github.com/pierrepo/autoclassweb-server.git
 ```
 
 ## Configure AutoClassWeb 
@@ -33,24 +34,28 @@ Update port in the configuration file `docker-compose.yml`. Replace `8000` in `8
 ## Run web serveur
 
 From the project folder, run the following command:
-```
-$ docker-compose up -d
+
+```bash
+docker-compose up -d
 ```
 
 ## Update images
 
 First stop containers:
-```
-$ docker-compose down -v
+
+```bash
+docker-compose down -v
 ```
 
 Then, update images:
-```
-$ docker-compose pull
+
+```bash
+docker-compose pull
 ```
 
 Eventually, re-run containers:
-```
-$ docker-compose up -d
+
+```bash
+docker-compose up -d
 ```
 
