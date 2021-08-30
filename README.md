@@ -1,6 +1,6 @@
 # Server deployment for AutoClassWeb
 
-This document explains how to deploy AutoClassWeb on a web server.
+This document explains how to deploy [AutoClassWeb](https://github.com/pierrepo/autoclassweb) on a web server.
 
 
 ## Install Docker
@@ -18,7 +18,7 @@ Install Docker-compose with the following [instructions](https://docs.docker.com
 $ git clone https://github.com/pierrepo/autoclassweb-server.git
 ```
 
-## Update configuration 
+## Configure AutoClassWeb 
 
 ### App
 
