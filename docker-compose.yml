@@ -15,7 +15,7 @@ services:
 
     flaskapp:
         restart: always
-        image: biocontainers/autoclassweb:v2.1.1_cv1
+        image: biocontainers/autoclassweb:v2.2.1_cv1
         volumes:
             - flaskapp-static:/app/flaskapp/static
             - ./results:/app/results
