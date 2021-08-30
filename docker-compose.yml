@@ -2,7 +2,7 @@ version: "3"
 services:
     nginx:
         restart: always
-        image: nginx:1.13
+        image: nginx:1.21.1
         volumes:
             - ./nginx/autoclassweb_nginx.conf:/etc/nginx/conf.d/default.conf
             - flaskapp-static:/www/static
@@ -15,7 +15,7 @@ services:
 
     flaskapp:
         restart: always
-        image: biocontainers/autoclassweb:v1.2.0_cv1
+        image: biocontainers/autoclassweb:v2.1.1_cv1
         volumes:
             - flaskapp-static:/app/flaskapp/static
             - ./results:/app/results
